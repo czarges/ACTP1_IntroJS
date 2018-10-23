@@ -62,5 +62,28 @@
 
       </fieldset>
     </form>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $('h1').css('color', 'red');
+      $('.section-1').css('background-color', 'yellow');
+      var counter = $('.counter').text();
+      counter = parseInt (counter);
+      counter = counter + 10;
+
+      $('.counter').text (counter);
+     
+     $('#row-3').on('click', function(){
+        $(this).css ('background-color', 'gray');
+        $(this).hide('slow');
+
+     });
+     $('section h1').css ('font-size','2em'); //CSS
+     $('section').children ('h1').css ('color','blue'); //jQuery
+
+      $('table tr:last-child').css('background-color','red'); //CSS
+     $('table tr').last().css('background-color','red'); s // jQuery
+
+    </script>
   </body>
 </html>
